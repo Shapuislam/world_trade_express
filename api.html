@@ -1,0 +1,1155 @@
+<!doctype html>
+<html class="no-js" lang="">  
+    <head> 
+        <meta charset="utf-8"> 
+        <meta http-equiv="x-ua-compatible" content="ie=edge">  
+        <title>World Trade Express | API</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" type="image/png" href="img/favicon.png"/>
+
+        <!-- Place favicon.ico in the root directory -->
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto:400,700" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"><!-- 
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"> -->
+        <link  href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" media="all">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.1/css/bootstrap-select.css" />
+        <link  href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css" rel="stylesheet" media="all">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" rel="stylesheet" media="all">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <!-- header Section Start -->    
+        <header class="header-area">
+                <!-- Menu Area
+                ============================================ -->
+                <div id="main-menu" class="sticker">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+
+                                <div class="col-md-1 col-sm-1 col-xs-2">
+                                    <div class="logo login float-left navbar-header">
+                                        <a class="navbar-brand" href="index.html"><img src="img/favicon.png" alt=""></a>
+                                    </div>
+                                    <div class="logonext float-left">
+                                        <a class="navbar-brand" href="index.html"><img src="img/favicon.png" alt=""></a>
+                                    </div>
+                                    <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-menu-2" style="float: left; margin: 0;">
+                                        <i class="fa fa-bars menu-open"></i>
+                                        <i class="fa fa-times menu-close"></i>
+                                    </button>
+                                </div>
+
+                                <div class="col-md-11 col-sm-11 col-xs-10">
+                                    <div class="main-menu float-right collapse navbar-collapse loginmenu" id="main-menu-2">
+                                        <nav>                        
+                                            <ul>
+                                                <li class="active"><a href="dashboard.html">Home</a></li>
+                                                <li><a href="#">Report<span class="dropdown fa fa-angle-down" style="padding-left: 5px;"></span></a></a>
+                                                    <ul>
+                                                      <li><a href="orderlist.html"><i class="fa fa-chevron-right"></i>Order List</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li><a href="booking.html">Booking</a></li>
+                                                <li><a href="payment.html">Payments Details</a></li>
+                                                <li><a href="ticket.html">Tickets</a></li>
+                                                <li><a href="faqlogin.html">Faq's</a></li>
+                                                <li class="contactdp"><a href="#">Booster<span class="dropdown fa fa-angle-down" style="padding-left: 5px;"></span></a></a>
+                                                    <ul>
+                                                      <li><a href="account.html"><i class="fa fa-chevron-right"></i>Account</a></li>
+                                                      <li><a href="#"><i class="fa fa-chevron-right"></i>Contact</a>
+                                                        <ul>
+                                                          <li><a href="group.html"><i class="fa fa-chevron-right"></i>Group</a></li>
+                                                          <li><a href="number.html"><i class="fa fa-chevron-right"></i>Number</a></li>
+                                                        </ul>
+                                                      </li>
+                                                      <li><a href="sms.html"><i class="fa fa-chevron-right"></i>Sms</a></li>
+                                                      <li><a href="topup.html"><i class="fa fa-chevron-right"></i>Top Up</a></li>
+                                                      <li><a href="log.html"><i class="fa fa-chevron-right"></i>Log</a></li>
+                                                      <li><a href="paymentlog.html"><i class="fa fa-chevron-right"></i>Paymrnt Log</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="expressmenu active"><a href="#">WT Express<span class="dropdown fa fa-angle-down" style="padding-left: 5px;"></span></a></a>
+                                                    <ul>
+                                                      <li><a href="packages.html"><i class="fa fa-chevron-right"></i>My Package & Promo</a></li>
+                                                      <li><a href="accountdetails.html"><i class="fa fa-chevron-right"></i>Account Details</a></li>
+                                                      <li><a href="api.html"><i class="fa fa-chevron-right"></i>Api</a></li>
+                                                      <li><a href="passwordreset.html"><i class="fa fa-chevron-right"></i>Password Reset</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="logout"><a href="#"><i class="fa fa-sign-out"></i></a></li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </header>
+        <!-- header Section end -->   
+        
+       <!-- slider Section Start -->       
+        <section class="loginslider" style="background-image: url(img/loginslide.jpg);">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-8 col-sm-8 col-xs-8">
+                    <h1>API</h1>
+                </div>
+              </div>             
+            </div>
+         </section>
+        <!-- slider Section end --> 
+
+        <!-- sms Section start -->
+        <section class="sms clearfix">
+            <div class="container">
+
+                <!-- <div class="clearfix">
+                    <div class="col-md-1"></div>
+                    <div class="col-md-10">
+                    	<div id="statusDiv" class="success"></div>
+                    </div>
+                    <div class="col-md-1"></div>
+                </div> -->
+
+                <div id="#">
+                    <div id="cmsContent_details">
+                    	<div class="row">
+                    		<div class="manageLotForm">
+
+                    			<h1 class="api_title_page">Parcel Insertion</h1>
+
+		                    	<!-- <div class="downloadbtn text-center">
+		                    		<button class="btn_core" onclick="downloadApiDocument(); return false;">
+		                    			<span class="margindownloadbtn"><i class="fa fa-download" aria-hidden="true"></i></span>Downaload Api Documentation
+		                    		</button>
+		                    	</div>   -->           
+
+
+	                    	    <div class="col-sm-5">
+	                    	       	
+	                    	       	<div class="ftr api_doc1">
+	                    	       		<div class="form-group">
+
+	                    	       			<label class="label-control">Request Type</label>
+
+	                    	       			<select data-live-search="true" class="form-control" id="request_type" name="request_type" onclick="requestType(this.value); return false;">
+	                    	       				<option value="get">Get</option>
+	                    	       				<option value="post">Post</option><option value="postjson">Post Json</option>
+	                    	       			</select>
+	                    	       		</div>
+
+	                    	         	<div class="form-group">
+
+	                    	         		<label class="label-control">Request URL</label>
+
+	                    	         		<textarea rows="8" id="#" class="form-control" readonly="">http://tradeexpress.com.bd/apiv2/?parcel=insert&amp;recipient_name=someone's name&amp;recipient_mobile=01xxxxxxxxx&amp;recipient_city=cityname&amp;recipient_area=areaname&amp;recipient_address=addressname&amp;package_code=#yourpackgecode&amp;product_price=priceofproduct&amp;payment_method=paymentmethod
+	                    	         		</textarea>
+	                    	         	</div>
+
+
+	                    	         	<div class="form-group">
+
+	                    	         		<label class="label-control">Request Header</label>
+
+	                    	         		<textarea rows="3" id="Requestheader" class="form-control" readonly="">Headers: [ API_SECRET: zAU6XAPI_KEY: ftRoUSER_ID: L3847]
+	                    	         		</textarea>
+	                    	         	</div>
+
+
+	                    	         	<div style="display: none;" class="form-group requestedbody">
+
+	                    	         		<label>Request Body</label>
+
+	                    	         		<textarea rows="6" id="Requestbody" class="form-control" readonly=""></textarea>
+	                    	         	</div>
+	                    	     	</div>
+	                    	    </div>
+
+
+	                    	    <div class="col-sm-7">
+	                    	        <div class="ftr api_doc api_document_show">
+
+	                    	        	<h2>API Document</h2>        
+	                    	        	<p>Using this RESTful API every e-commerce can order parcel dynamically. You can directly call the url with your user id, api key and api secret. Ajax and CURL also can call the RESTful API</p>
+
+	                    	        	<h3>Required Parameters</h3>
+	                    	        	<h5><b>Parcel</b></h5>
+
+	                    	        	<div class="paramdetail">
+
+	                    	        		<div class="apititletext"><b>Item - </b><b class="paramitems">parcel</b>
+	                    	        		</div>
+
+
+	                    	         		<div class="apititletext"><b>Description -</b> Define the type operation to be performed</div>
+
+	                    	         		<div class="apititletext"><b>Value -</b> Insert </div>
+
+
+	                    	         		<div class="apititletext"><b>Type -</b> String</div>
+
+	                    	         	</div>
+
+	                    	         		<h5><b>Recipient Name</b></h5>
+
+	                    	         		<div class="paramdetail">
+
+	                    	         			<div class="apititletext">
+	                    	         				<b>Item - </b>
+	                    	         				<b class="paramitems">recipient_name</b>
+	                    	         			</div>
+
+
+	                    	         			<div class="apititletext">
+	                    	         				<b>Description -</b> Parcel receiver's name not more than 255 characters
+	                    	         			</div>
+
+	                    	         			<div class="apititletext">
+	                    	         				<b>Value -</b> Abdullah Al Mamun 
+	                    	         			</div>
+
+	                    	         			<div class="apititletext">
+	                    	         				<b>Type -</b> String
+	                    	         			</div>
+	                    	         		</div>
+
+	                    	         		<h5><b>Recipient Mobile</b></h5>
+
+
+	                    	         	<div class="paramdetail">
+
+	                    	         		<div class="apititletext">
+	                    	         			<b>Item - </b>
+	                    	         			<b class="paramitems">recipient_mobile</b>
+	                    	         		</div>
+
+
+	                    	         		<div class="apititletext">
+	                    	         			<b>Description -</b> Parcel receiver's mobile number exactly 11-digit long
+	                    	         		</div>
+
+
+	                    	         		<div class="apititletext">
+	                    	         			<b>Value -</b> Recipient Mobile 
+	                    	         		</div>
+
+	                    	         		<div class="apititletext"><b>Type -</b> String
+	                    	         		</div>
+	                    	         	</div>
+
+	                    	         		<h5><b>Recipient City</b></h5>                           
+
+	                    	         	<div class="paramdetail">
+
+	                    	         		<div class="apititletext">
+	                    	         			<b>Item - </b>
+	                    	         			<b class="paramitems">recipient_city</b>
+	                    	         		</div>
+
+	                    	         		<div class="apititletext">
+	                    	         			<b>Description -</b> Parcel receiver's city not more than 40 characters
+	                    	         		</div>
+
+
+	                    	         		<div class="apititletext">
+	                    	         			<b>Value -</b> Dhaka / Provide City Name from eCourier Coverage Cities
+	                    	         		</div>
+
+	                    	         		<div class="apititletext"><b>Type -</b> String</div>
+	                	         		</div>
+
+	                	         			<h5><b>Recipient Area</b></h5>                            
+
+
+	                    	         	<div class="paramdetail">
+
+	                    	         		<div class="apititletext">
+	                    	         			<b>Item - </b>
+	                    	         			<b class="paramitems">recipient_area</b>
+	                    	         		</div>
+
+
+	                    	         		 <div class="apititletext">
+	                    	         		 	<b>Description -</b> Parcel receiver's area not more than 40 characters
+	                    	         		 </div>
+
+
+	                    	         		 <div class="apititletext">
+	                    	         		 	<b>Value -</b> Badda / Provide Area Name from eCourier Coverage Area
+	                    	         		 </div>
+
+
+	                    	         		 <div class="apititletext"><b>Type -</b> String
+	                    	         		 </div>
+	                    	         	</div>
+
+	                    	         		<h5><b>Recipient Address</b></h5>
+
+	                    	         	<div class="paramdetail">
+
+	                    	         		<div class="apititletext">
+	                    	         			<b>Item - </b>
+	                    	         			<b class="paramitems">recipient_address</b>
+	                    	         		</div>
+
+	                    	         		<div class="apititletext">
+	                    	         			<b>Description -</b> Parcel receiver's detail address not more than 120 characters
+	                    	         		</div>
+
+
+	                    	         		<div class="apititletext">
+	                    	         			<b>Value -</b> House #34, Road #4, Block #4 Or Gudaraghat, North Badda Or Village: Rosulpur, Post: Post, Thana: Thana, Dist: District
+	                    	         		</div>
+
+	                    	         		<div class="apititletext">
+	                    	         			<b>Type -</b> String
+	                    	         		</div>
+	                    	         	</div>
+
+	                    	         		<h5><b>Package Code</b></h5>
+
+	                    	         	<div class="paramdetail">
+
+	                    	         		<div class="apititletext">
+	                    	         			<b>Item - </b>
+	                    	         			<b class="paramitems">package_code</b>
+	                    	         		</div>
+
+	                    	         		<div class="apititletext">
+	                    	         			<b>Description -</b> Your Package Code
+	                    	         		</div>
+
+	                    	         		<div class="apititletext">
+	                    	         			<b>Value -</b> #2423
+	                    	         		</div>
+
+
+	                    	         		<div class="apititletext">
+	                    	         			<b>Type -</b> String
+	                    	         		</div> 
+	                    	         	</div>
+
+	                    	         		<h5><b>Product Price</b></h5>
+
+	                    	         	<div class="paramdetail">
+
+	                    	         		<div class="apititletext">
+	                    	         			<b>Item - </b>
+	                    	         			<b class="paramitems">product_price</b>
+	                    	         		</div>
+
+
+	                    	         		<div class="apititletext">
+	                    	         			<b>Description -</b> Parcel price
+	                    	         		</div>
+
+	                    	         		<div class="apititletext">
+	                    	         			<b>Value -</b> 1200
+	                    	         		</div>
+
+	                    	         		<div class="apititletext">
+	                    	         			<b>Type -</b> Integer
+	                    	         		</div>
+	                    	         	</div>
+
+	                    	         		<h5><b>Payment Method</b></h5>                            
+
+	                    	         	<div class="paramdetail">
+
+	                    	         		<div class="apititletext">
+	                    	         			<b>Item - </b>
+	                    	         			<b class="paramitems">payment_method</b>
+	                    	         		</div>
+
+	                    	         		<div class="apititletext">
+	                    	         			<b>Description -</b> Payment Method
+	                    	         		</div>
+
+
+	                    	         		<div class="apititletext">
+	                    	         			<b>Value -</b> Cash On Delivery - COD, Point of Sale - POS, Mobile Payment - MPAY, Card Payment - CCRD
+	                    	         		</div>
+
+
+	                	         		 	<div class="apititletext">
+	                	         		 		<b>Type -</b> String
+	                	         		 	</div>
+	                	         		</div>
+
+	                	         			<h3>Optional Parameters</h3>
+	                	         			<h5><b>Recipient Landmark</b></h5>
+
+
+	                    	         	<div class="paramdetail">
+
+	                    	         		<div class="apititletext">
+	                    	         			<b>Item - </b>
+	                    	         			<b class="paramitems">recipient_landmark</b>
+	                    	         		</div>
+
+
+	                    	         		<div class="apititletext">
+	                    	         			<b>Description -</b> Receiver's Landmark to find address efficiently - not more than 30 characters
+	                    	         		</div>
+
+
+	                	         		 	<div class="apititletext">
+	                	         		 		<b>Value -</b> Near Fuzi Tower Default - N/A
+	                	         		 	</div>
+
+
+	                	         		 	<div class="apititletext"><b>Type -</b> String
+	                	         		 	</div>
+	                	         		</div>
+
+	                	         			<h5><b>Parcel Type</b></h5>
+
+	                	         		<div class="paramdetail">
+
+	                	         			<div class="apititletext">
+	                	         				<b>Item - </b>
+	                	         				<b class="paramitems">parcel_type</b>
+	                	         			</div>
+
+
+	                	         		 	<div class="apititletext">
+	                	         		 		<b>Description -</b> Type of parcel
+	                	         		 	</div>
+
+
+	                    	         		<div class="apititletext">
+	                    	         			<b>Value -</b> For box - BOX (default), For documents - DOC, For gift - GIFT
+	                    	         		</div>
+
+
+	                    	         		<div class="apititletext">
+	                    	         			<b>Type -</b> String
+	                    	         		</div>
+	                    	         	</div>
+
+	                    	         			<h5><b>Is Anonymous</b></h5>
+
+	                    	         	<div class="paramdetail">
+
+	                    	         		<div class="apititletext">
+	                    	         			<b>Item - </b>
+	                    	         			<b class="paramitems">is_anonymous</b>
+	                    	         		</div>
+
+
+	                	         		 	<div class="apititletext">
+	                	         		 		<b>Description -</b> If you don't want to expose yourself (for GIFT type)
+	                	         		 	</div>
+
+
+	                	         		 	<div class="apititletext">
+	                	         		 		<b>Value -</b> Anonymous - 1, Expose Identity - 0, Default - null
+	                	         		 	</div>
+
+
+	                	         		 	<div class="apititletext">
+	                	         		 		<b>Type -</b> Integer
+	                	         		 	</div>
+	                	         		</div>
+
+	                	         			<h5><b>Requested Delivery Time</b></h5>
+
+	                	         		<div class="paramdetail">
+
+	                	         		 	<div class="apititletext">
+	                	         		 		<b>Item - </b>
+	                	         		 		<b class="paramitems">requested_delivery_time</b>
+	                	         		 	</div>
+
+	                	         		 	<div class="apititletext">
+	                	         		 		<b>Description -</b> Requested delivery time
+	                	         		 	</div>
+
+	                	         		 	<div class="apititletext">
+	                	         		 		<b>Value -</b> 2017-02-01 (YYYY-MM-DD) Default Next Day
+	                	         		 	</div>
+
+	                	         		 	<div class="apititletext">
+	                	         		 		<b>Type -</b> String
+	                	         		 	</div>
+
+	                	         		</div>
+
+	                	         			<h5><b>Delivery Hour</b></h5>
+
+	                	         		<div class="paramdetail">
+
+	                	         			<div class="apititletext">
+	                	         				<b>Item - </b>
+	                	         				<b class="paramitems">delivery_hour</b>
+	                	         			</div>
+
+
+	                	         		 	<div class="apititletext">
+	                	         		 		<b>Description -</b> For fixed time base package provide a delivery time slot
+	                	         		 	</div>
+
+	            	         		 		<div class="apititletext">
+	            	         		 			<b>Value -</b> Anytime - any (default) 10:30am - 1:00pm, 1:00pm - 4:00pm, 4:00pm - 7:00pm
+	            	         		 		</div>
+
+
+	                	         		 	<div class="apititletext">
+	                	         		 		<b>Type -</b> String
+	                	         		 	</div>
+	                	         		</div>
+
+	                	         		 	<h5><b>Recipient Zip</b></h5>
+
+	            	         		 	<div class="paramdetail">
+
+	        	         		 			<div class="apititletext">
+	        	         		 				<b>Item - </b>
+	        	         		 				<b class="paramitems">recipient_zip</b>
+	        	         		 			</div>
+
+
+	                	         		 	<div class="apititletext">
+	                	         		 		<b>Description -</b> Receiver�s ZIP Code
+	                	         		 	</div>
+
+	                	         		 	<div class="apititletext">
+	                	         		 		<b>Value -</b> 1212, Default - null
+	                	         		 	</div>
+
+	                	         		 	<div class="apititletext">
+	                	         		 		<b>Type -</b> String
+	                	         		 	</div>
+	                	         		 </div>
+
+	                	         		 	<h5><b>Product Id</b></h5>
+
+	            	         		 	<div class="paramdetail">
+
+	            	         		 		<div class="apititletext">
+	            	         		 			<b>Item - </b>
+	            	         		 			<b class="paramitems">product_id</b>
+	            	         		 		</div>
+
+	            	         		 		<div class="apititletext">
+	            	         		 			<b>Description -</b> Your Product or order id - not more than 20 characters
+	            	         		 		</div>
+
+	            	         		 		<div class="apititletext">
+	            	         		 			<b>Value -</b> GLX123 (must be unique if you want to track using this id instead of eCourier ID)
+	            	         		 		</div>
+
+	            	         		 		<div class="apititletext">
+	            	         		 			<b>Type -</b> String
+	            	         		 		</div>
+	            	         		 	</div>
+
+	            	         		 		<h5><b>Pick Address</b></h5>
+
+	            	         		 	<div class="paramdetail">
+
+	            	         		 		<div class="apititletext">
+	            	         		 			<b>Item - </b>
+	            	         		 			<b class="paramitems">pick_address</b>
+	            	         		 		</div>
+
+	            	         		 		<div class="apititletext">
+	            	         		 			<b>Description -</b> Your alternate pick address not more than 255 characters 
+	            	         		 		</div>
+
+	            	         		 		<div class="apititletext">
+	            	         		 			<b>Value -</b> Any valid address, Default - null
+	            	         		 		</div>
+
+	            	         		 		<div class="apititletext">
+	            	         		 			<b>Type -</b> Integer
+	            	         		 		</div>
+	            	         		 	</div>
+
+	            	         		 		<h5><b>Comments</b></h5> 
+
+	        	         		 		<div class="paramdetail">
+
+	        	         		 			<div class="apititletext">
+	        	         		 				<b>Item - </b>
+	        	         		 				<b class="paramitems">comments</b>
+	        	         		 			</div>
+
+	        	         		 			<div class="apititletext"
+	        	         		 			>
+	        	         		 			<b>Description -</b> Instructions for delivery not more than 255 characters
+	        	         		 			</div>
+
+	        	         		 			<div class="apititletext">
+	        	         		 				<b>Value -</b> Default - null
+	        	         		 			</div>
+
+	        	         		 			<div class="apititletext">
+	        	         		 				<b>Type -</b> String</div>
+	        	         		 			</div>
+	        	         		 		</div>
+	        	         		 	</div>
+	        	         		</div>
+	        	        </div>
+
+	        	        <div class="row">
+
+	        	        	<div class="manageLotForm">
+
+    	         				<h1 class="api_title_page">Parcel Tracking</h1>
+
+    	         				<div class="col-sm-5">
+
+    	         					<div class="ftr api_doc1">
+    	         						<div class="form-group">
+
+    	         							<label class="label-control">Request Type</label>
+
+    	         							<select class="form-control" id="request_type_tracking" name="request_type" onclick="requestTypeTracking(this.value); return false;">
+    	         								<option value="get">Get</option>
+    	         								<option value="post">Post</option>
+    	         								<option value="postjson">Post Json</option>
+    	         							</select>
+    	         						</div>
+
+    	         						<div class="form-group">
+
+    	         							<label class="label-control">Request URL</label>
+
+    	         							<textarea rows="7" id="urllinktracking" class="form-control" readonly="">http://tradeexpress.com.bd/apiv2/?parcel=track&amp;product_id=12345 or http://ecourier.com.bd/apiv2/?parcel=track&amp;ecr=ECR030202404 or http://ecourier.com.bd/apiv2/?parcel=track&amp;product_id=12345&amp;ecr=ECR003293213</textarea>
+    	         						</div>
+
+    	         						<div class="form-group">
+
+    	         							<label class="label-control">Request Header</label>
+
+    	         							<textarea rows="2" id="requestheadertracking" class="form-control" readonly="">Headers: [ API_SECRET: zAU6XAPI_KEY: ftRoUSER_ID: L3847]</textarea>
+    	         						</div>
+
+    	         						<div class="requestedbodytracking" style="display: none;">
+
+    	         								<label>Request Body</label>
+
+    	         								<textarea rows="4" id="bodydatatracking" class="form-control" readonly=""></textarea>
+    	         						</div>
+    	         					</div>
+    	         				</div>
+
+    	         				<div class="col-sm-7">
+
+	    	         				<div class="ftr api_doc api_document_show">
+
+	    	         					<h2>API Document</h2>
+	    	         					<p>Using this RESTful API every e-commerce can get parcel information dynamically. You can directly call the url with your parcel or product id or ecr. Ajax and CURL also can call the RESTful API</p>
+	    	         					<h3>Required Parameters</h3>
+	    	         					<h5><b>Parcel</b></h5>
+
+	    	         					<div class="paramdetail">
+
+	    	         						<div class="apititletext">
+	    	         							<b>Item - </b>
+	    	         							<b class="paramitems">parcel</b>
+	    	         						</div>
+
+	    	         						<div class="apititletext">
+	    	         							<b>Value -</b> track
+	    	         						</div>
+
+	    	         						<div class="apititletext">
+	    	         							<b>Type -</b> String
+	    	         						</div>
+	    	         					</div>
+
+	    	         					<h5><b>Product ID</b></h5>
+
+	    	         					<div class="paramdetail">
+
+	    	         						<div class="apititletext">
+	    	         							<b>Item - </b>
+	    	         							<b class="paramitems">product_id</b>
+	    	         						</div>
+
+	    	         						<div class="apititletext">
+	    	         							<b>Value -</b> Your Product ID</div>
+
+	    	         							<div class="apititletext">
+	    	         								<b>Type -</b> String
+	    	         							</div>
+	    	         					</div>
+
+	    	         						<h5><b>ECR</b></h5>
+
+		         						<div class="paramdetail">
+
+		         							<div class="apititletext">
+		         								<b>Item - </b>
+		         								<b class="paramitems">ecr</b>
+		         							</div>
+
+		         							<div class="apititletext">
+		         								<b>Value -</b> eCourier ID
+		         							</div>
+
+		         							<div class="apititletext">
+		         								<b>Type -</b> String
+		         							</div>
+		         						</div>
+		         					</div>
+	         					</div>
+	         				</div>
+	         			</div>
+
+
+	         			<div class="row">
+
+	         				<div class="manageLotForm">
+
+	         					<h1 class="api_title_page">City</h1>
+
+	         					<div class="col-sm-5">
+
+	         						<div class="ftr api_doc1">
+	         							<div class="form-group">
+
+	         								<label class="label-control">Request Type</label>
+
+	         								<select class="form-control" id="#" name="#">
+	         									<option value="get">Get</option>
+	         									<option value="post">Post</option>
+	         									<option value="postjson">Post Json</option>
+	         								</select>
+	         							</div>
+
+	         							<div class="form-group">
+
+	         								<label class="label-control">Request URL</label>
+
+	         								<textarea rows="1" id="urllinkcity" class="form-control" readonly="">http://tradeexpress.com.bd/apiv2/?parcel=citylist</textarea>
+	         							</div>
+
+	         							<div class="form-group">
+
+	         								<label class="label-control">Request Header</label>
+
+	         								<textarea rows="2" id="requestheadercity" class="form-control" readonly="">Headers: [ API_SECRET: zAU6XAPI_KEY: ftRoUSER_ID: L3847]
+	         								</textarea>
+	         							</div>
+
+	         							<div class="requestedbodycity" style="display: none">
+
+	         								<label>Request Body</label>
+
+	         								<textarea rows="1" id="bodydatacity" class="form-control" readonly=""></textarea>
+	         							</div>
+	         						</div>
+	         					</div>
+
+	         					<div class="col-sm-7">
+
+	         						<div class="ftr api_doc api_document_show">
+	         							<h2>API Document</h2>
+	         							<p>Using this RESTful API every e-commerce can get parcel information dynamically. You can directly call the url with your parcel. Ajax and CURL also can call the RESTful API</p>
+	         							<h3>Required Parameters</h3>
+	         							<h5><b>Parcel</b></h5>
+
+	         							<div class="paramdetail">
+
+	         								<div class="apititletext">
+	         									<b>Item - </b>
+	         									<b class="paramitems">parcel</b>
+	         								</div>
+
+	         								<div class="apititletext">
+	         									<b>Value -</b> citylist
+	         								</div>
+
+	         								<div class="apititletext">
+	         									<b>Type -</b> String
+	         								</div>
+	         							</div>
+	         						</div>
+	         					</div>
+	         				</div>
+	         			</div>
+
+	         			<div class="row">
+
+	         				<div class="manageLotForm">
+	         					<h1 class="api_title_page">Coverage Area</h1>
+
+	         					<div class="col-sm-5">
+
+	         						<div class="ftr api_doc1">
+
+	         							<div class="form-group">
+
+	         							 	<label class="label-control">Request Type</label>
+
+	         							 	<select class="form-control" id="#" name="#">
+	         							 		<option value="get">Get</option>
+	         							 		<option value="post">Post</option>
+	         							 		<option value="postjson">Post Json</option>
+	         							 	</select>
+	         							</div>
+
+	         							<div class="form-group">
+
+	         								<label class="label-control">Request URL</label>
+
+	         								<textarea rows="2" id="urllinkcoveragearea" class="form-control" readonly="">http://tradeexpress.com.bd/apiv2/?parcel=arealist&amp;city=Dhaka
+	         								</textarea>
+	         							</div>
+
+	         							<div class="form-group">
+
+	         								<label class="label-control">Request Header</label>
+
+	         								<textarea rows="2" id="requestheadercoveragearea" class="form-control" readonly="">Headers: [ API_SECRET: zAU6XAPI_KEY: ftRoUSER_ID: L3847]
+	         								</textarea>
+	         							</div>
+
+	         							<div class="requestedbodycoveragearea" style="display: none">
+
+	         								<label>Request Body</label>
+
+	         								<textarea rows="1" id="bodydatacoveragearea" class="form-control" readonly=""></textarea>
+	         							</div>
+	         						</div>
+	         					</div>
+
+	         					<div class="col-sm-7">
+
+	         						<div class="ftr api_doc api_document_show">
+	         							<h2>API Document</h2>
+	         							<p>Using this RESTful API every e-commerce can get parcel information dynamically. You can directly call the url with your parcel or area. Ajax and CURL also can call the RESTful API</p>
+	         							<h3>Required Parameters</h3>
+	         							<h5><b>Parcel</b></h5>
+
+	         							<div class="paramdetail">
+
+	         								<div class="apititletext">
+	         									<b>Item - </b>
+	         									<b class="paramitems">parcel</b></div>
+
+	         								<div class="apititletext">
+	         									<b>Value -</b> arealist
+	         								</div>
+
+	         								<div class="apititletext">
+	         									<b>Type -</b> String
+	         								</div>
+	         							</div>
+
+	         							<h5><b>City</b></h5>
+
+	         							<div class="paramdetail">
+
+	         								<div class="apititletext">
+	         									<b>Item - </b>
+	         									<b class="paramitems">city</b>
+	         								</div>
+
+	         								<div class="apititletext">
+	         									<b>Value -</b> Value of listed city from citylist like-Dhaka
+	         								</div>
+
+	         								<div class="apititletext">
+	         									<b>Type -</b> String
+	         								</div>
+	         							</div>
+	         						</div>
+	         					</div>
+	         				</div>
+	         			</div>
+
+
+	         			<div class="row">
+
+	         				<div class="manageLotForm">
+
+	         					<h1 class="api_title_page">Parcel Inquiry By Product ID</h1>
+
+	         					<div class="col-sm-5">
+
+	         						<div class="ftr api_doc1">
+
+	         							<div class="form-group">
+	         								<label class="label-control">API Key :
+	         								</label>
+	         								<input type="text" class="code form-control" name="key" readonly="readonly">
+	         							</div>
+
+	         							<div class="form-group">
+
+	         								<label class="label-control">API Link :
+	         								</label><br>
+
+	         								<input type="text" class="code form-control" name="linkProductDetailsProductNumber" readonly="readonly">
+	         							</div>
+	         						</div>
+	         					</div>
+
+	         					<div class="col-sm-7">
+
+	         						<div class="ftr api_doc api_document_show">
+	         							<h2>API Document</h2>
+	         							<p>Using this RESTful API every e-commerce can get parcel information dynamically.</p> 
+	         							<p>You can directly call the url with your product id or order id</p>
+	         							<p>Ajax and CURL also can call the RESTful API</p>
+	         							<h3>Required Parameters</h3>
+	         							<p>you can hit the API with both of the parameters, both parameters are required</p>
+	         							<h4>api_key</h4>
+	         							<p>
+	         							<strong>api_key</strong> - Key identifier for authorization.</p>
+	         							<h4>pid</h4>
+	         							<p><strong>product id or order id</strong> - This parameter specified by you during parcel insertion</p>
+	         						</div>
+	         					</div>
+	         				</div>
+	         			</div>
+
+	         			<div class="row">
+
+	         				<div class="manageLotForm">
+
+	         					<h1 class="api_title_page">Parcel Inquiry By Consignment Number</h1>
+
+	         					<div class="col-sm-5">
+
+	         						<div class="ftr api_doc1">
+
+	         							<div class="form-group">
+
+	         								<label class="label-control">API Link :</label>
+
+	         								<input type="text" class="code form-control" name="linkProductDetailsConsignment" readonly="readonly">
+	         							</div>
+	         						</div>
+	         					</div>
+
+	         					<div class="col-sm-7">
+
+	         						<div class="ftr api_doc api_document_show">
+	         							<h2>API Document</h2>
+	         							<p>Using this RESTful API every e-commerce can get parcel information dynamically.</p>
+	         							<p>You can directly call the url with your consignment number</p>
+	         							<p>Ajax and CURL also can call the RESTful API</p>
+	         							<h3>Required Parameters</h3>
+	         							<p>you can hit the API with one parameter, consignment number is required</p>
+	         							<h4>cid</h4>
+	         							<p>
+	         							<strong>consignment number</strong> - consignment number provided by e-courier site for parcel tracking</p>
+	         						</div>
+	         					</div>
+	         				</div>
+	         			</div>
+        	        </div>
+                </div>
+
+           		<div id="contentLikeComment_6"></div>
+
+           		<div id="contentCommentForm_6"></div>
+     		</div>
+        </section>
+        <!-- sms Section End -->
+
+
+        <!-- footer Section start-->
+        <section class="footer_areatop">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                        <div class="footercontent">
+                            <a href="index.html"><img src="img/logo.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-4">
+                        <div class="track">
+                            <ul>
+                                <li><i class="fa fa-chevron-right"></i><a href="about.html">About</a></li>
+                                <li><i class="fa fa-chevron-right"></i><a href="service.html">Services</a></li>
+                                <li><i class="fa fa-chevron-right"></i><a href="features.html">Features</a></li>
+                                <li><i class="fa fa-chevron-right"></i><a href="faq.html">FAQ'<small>s</small></a></li>
+                                <li><i class="fa fa-chevron-right"></i><a href="media.html">Media Room</a></li>
+                                <li><i class="fa fa-chevron-right"></i><a href="contact.html">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-4">
+                        <div class="track">
+                            <ul>
+                                <li><i class="fa fa-chevron-right"></i><a href="#">Delivery Agents</a></li>
+                                <li><i class="fa fa-chevron-right"></i><a href="#">E-commerce</a></li>
+                                <li><i class="fa fa-chevron-right"></i><a href="#">Payments</a></li>
+                                <li><i class="fa fa-chevron-right"></i><a href="#">User Guidline</a></li>
+                                <li><i class="fa fa-chevron-right"></i><a href="#">Call Support</a></li>
+                                <li><i class="fa fa-chevron-right"></i><a href="#">Career</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-4">
+                        <div class="track">
+                            <ul>
+                                <li><i class="fa fa-facebook-official"></i><a href="#">Facebook</a></li>
+                                <li><i class="fa fa-twitter"></i><a href="#">Twitter</a></li>
+                                <li><i class="fa fa-linkedin-square"></i><a href="#">Linkedin</a></li>
+                                <li><i class="fa fa-instagram"></i><a href="#">Instagram</a></li>
+                                <li><i class="fa fa-google-plus"></i><a href="#">Google+</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- footer Section End -->
+
+        <!-- footer_areabottom Section start-->
+        <section class="footer_areabottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                        <div class="footer_areabottomcontent">
+                            <h1>Copyright  &copy; 2018 worldtradeexpress.com. All rights reserved.Terms & Conditions | Privacy Policy</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- footer_areabottom Section send-->
+
+
+        <div class="short_cut">
+            <button data-toggle="modal" data-target="#get" class="shortcutbtn" type="button">Create Ticket</button>
+        </div>
+
+        <!-- modal Section start -->
+       
+        <!-- line modal -->
+        
+        <div class="modal fade" id="get" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="seminor-login-modal-body">
+                    <h3 class="modal-title" id="lineModalLabel">GET A QUOTE</h3>
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+                </div>
+                <div class="modal-body">
+                    <!-- content goes here -->
+                     <form class="seminor-login-form">
+                        
+                             <div class="field-container">  
+                                  <input type="text" class="field form-control" required placeholder="Name"/>
+                                  <label class="floating-label">Name</label> 
+                                </div>
+                                
+                                <div class="field-container">  
+                                  <input type="text" class="field form-control" required placeholder="Mobile"/>
+                                  <label class="floating-label">Mobile</label> 
+                                </div>
+
+                                <div class="field-container">  
+                                  <input type="text" class="field form-control" required placeholder="Email Address"/>
+                                  <label class="floating-label">Email Address</label> 
+                                </div>
+                                
+                                <div class="field-container">  
+                                  <select class="field form-control" placeholder="Request For Quote">
+                                       <option>Basic</option>
+                                       <option>ERP</option>
+                                       <option>Offline Apps</option>
+                                       <option>Apps</option>
+                                       <option>Wordpress Versions</option>
+                                       <option>Wordpress Plugings</option>
+                                  </select>
+                                  <label class="floating-label">Request For Quote</label>
+                                </div>
+
+                                 <div class="field-container">  
+                                    <textarea type="text" class="field form-control"  rows="3" required  placeholder="Description"></textarea>
+                                  <label class="floating-label">Description</label> 
+                                </div>
+
+                            <div class="btn-check-log">
+                                <button type="submit" class="btn-check-login">Submit</button>
+                            </div>
+                      </form>
+                </div>
+            </div>
+          </div>
+        </div>
+        <!-- modal Section end -->
+
+        <div class="short_cut">
+            <button data-toggle="modal" data-target="#ticket" class="shortcutbtn" type="button">Create Ticket</button>
+        </div>
+
+        <!-- modal Section start -->
+       
+        <!-- line modal -->
+        
+        <div class="modal fade" id="ticket" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="seminor-login-modal-body">
+                    <h3 class="modal-title" id="lineModalLabel">Complain or Queries</h3>
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+                </div>
+                <div class="modal-body">
+                    <!-- content goes here -->
+                     <form class="seminor-login-form">
+
+                                <div class="field-container">  
+                                    <textarea type="text" class="field form-control"  rows="3" required  placeholder="Comment or Complain"></textarea>
+                                  <label class="floating-label">Comment</label> 
+                                </div>
+                                
+                                <div class="field-container">  
+                                  <select class="field form-control">
+                                       <option>Select Complain Type</option>
+                                       <option>Billing</option>
+                                       <option>Complain</option>
+                                       <option>General Query</option>
+                                       <option>Other</option>
+                                  </select>
+                                  <label class="floating-label">Complain Type</label>
+                                </div>
+
+                            <div class="btn-check-log">
+                                <button type="submit" class="btn-check-login">Submit</button>
+                            </div>
+                      </form>
+                </div>
+            </div>
+          </div>
+        </div>
+        <!-- modal Section end -->
+
+        <!-- Return to Top -->
+        <a href="javascript:" id="return-to-top"><i class="fa fa-angle-up"></i></a>
+
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.18/jquery.touchSwipe.min.js"></script>
+        <!-- Bootstrap bootstrap-touch-slider Slider Main JS File -->
+        <script src="js/bootstrap-touch-slider.js"></script>
+        
+        <script type="text/javascript">
+            $('#bootstrap-touch-slider').bsTouchSlider();
+        </script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
+        <!-- Include Date Range Picker -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/>
+        <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.1/js/bootstrap-select.js"></script>
+        <script src="js/plugins.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/js/swiper.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>

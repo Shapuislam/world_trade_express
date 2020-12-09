@@ -1,0 +1,683 @@
+<!doctype html>
+<html class="no-js" lang="">   
+    <head> 
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>World Trade Express | BOOKING</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" type="image/png" href="img/favicon.png"/>
+
+        <!-- Place favicon.ico in the root directory -->
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto:400,700" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"><!-- 
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"> -->
+        <link  href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" media="all">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" rel="stylesheet" media="all">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <!-- header Section Start -->    
+        <header class="header-area">
+                <!-- Menu Area
+                ============================================ -->
+               <div id="main-menu" class="sticker">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+
+                                <div class="col-md-1 col-sm-1 col-xs-2">
+                                    <div class="logo login float-left navbar-header">
+                                        <a class="navbar-brand" href="index.html"><img src="img/favicon.png" alt=""></a>
+                                    </div>
+                                    <div class="logonext float-left">
+                                        <a class="navbar-brand" href="index.html"><img src="img/favicon.png" alt=""></a>
+                                    </div>
+                                    <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-menu-2" style="float: left; margin: 0;">
+                                        <i class="fa fa-bars menu-open"></i>
+                                        <i class="fa fa-times menu-close"></i>
+                                    </button>
+                                </div>
+
+                                <div class="col-md-11 col-sm-11 col-xs-10">
+                                    <div class="main-menu float-right collapse navbar-collapse loginmenu" id="main-menu-2">
+                                        <nav>                        
+                                            <ul>
+                                                <li><a href="dashboard.html">Home</a></li>
+                                                <li><a href="#">Report<span class="dropdown fa fa-angle-down" style="padding-left: 5px;"></span></a></a>
+                                                    <ul>
+                                                      <li><a href="orderlist.html"><i class="fa fa-chevron-right"></i>Order List</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="active"><a href="booking.html">Booking</a></li>
+                                                <li><a href="payment.html">Payments Details</a></li>
+                                                <li><a href="ticket.html">Tickets</a></li>
+                                                <li><a href="faqlogin.html">Faq's</a></li>
+                                                <li class="contactdp"><a href="#">Booster<span class="dropdown fa fa-angle-down" style="padding-left: 5px;"></span></a></a>
+                                                    <ul>
+                                                      <li><a href="account.html"><i class="fa fa-chevron-right"></i>Account</a></li>
+                                                      <li><a href="#"><i class="fa fa-chevron-right"></i>Contact</a>
+                                                        <ul>
+                                                          <li><a href="group.html"><i class="fa fa-chevron-right"></i>Group</a></li>
+                                                          <li><a href="number.html"><i class="fa fa-chevron-right"></i>Number</a></li>
+                                                        </ul>
+                                                      </li>
+                                                      <li><a href="sms.html"><i class="fa fa-chevron-right"></i>Sms</a></li>
+                                                      <li><a href="topup.html"><i class="fa fa-chevron-right"></i>Top Up</a></li>
+                                                      <li><a href="log.html"><i class="fa fa-chevron-right"></i>Log</a></li>
+                                                      <li><a href="paymentlog.html"><i class="fa fa-chevron-right"></i>Paymrnt Log</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="expressmenu"><a href="#">WT Express<span class="dropdown fa fa-angle-down" style="padding-left: 5px;"></span></a></a>
+                                                    <ul>
+                                                      <li><a href="packages.html"><i class="fa fa-chevron-right"></i>My Package & Promo</a></li>
+                                                      <li><a href="accountdetails.html"><i class="fa fa-chevron-right"></i>Account Details</a></li>
+                                                      <li><a href="api.html"><i class="fa fa-chevron-right"></i>Api</a></li>
+                                                      <li><a href="passwordreset.html"><i class="fa fa-chevron-right"></i>Password Reset</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="logout"><a href="#"><i class="fa fa-sign-out"></i></a></li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </header>
+        <!-- header Section end -->   
+        
+       <!-- slider Section Start -->       
+        <section class="loginslider" style="background-image: url(img/loginslide.jpg);">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-8 col-sm-8 col-xs-8">
+                    <h1>Add a New Consignment</h1>
+                </div>
+
+                <div class="col-md-4 col-sm-4 col-xs-4">
+			    	<div class="bookingslider">
+			      		<button type="button" class="btn btn-outline-primary">CSV Upload</button>
+			      	</div>
+			    </div>
+
+              </div>             
+            </div>
+         </section>
+        <!-- slider Section end --> 
+
+			
+			<!--bookingselect  Section start -->
+        	<section class="bookingselect clearfix">
+          		<div class="container">
+					<div class="row">
+						<div class="col-md-6 col-sm-6 col-xs-8 col-md-offset-3 col-sm-offset-3 col-xs-offset-2">
+				            <div class="selectdiv">
+							      <select>
+							          <option selected>Select Pick Address</option>
+							          <option>Option 1</option>
+							          <option>Option 2</option>
+							          <option>Option 2</option>
+							          <option>Option 2</option>
+							      </select>
+							</div>
+						</div>
+            		</div>
+            	</div>
+            </section>
+			<!--bookingselect  Section start -->
+        
+        <!-- bookingbody Section start -->
+        <section class="bookingbody loginregistration clearfix">
+          	<div class="container">
+            	<div class="row">
+            		<div class="col-md-6 col-sm-12 col-xs-12">
+
+            			<div class="bookingbodyheader clearfix">
+            				<h1>Recepient Information</h1>
+            			</div>
+
+            			<div class="bookingleftcontent clearfix">
+            				<div class="col-md-3 col-sm-3 col-xs-3">
+            					<div class="bookinglefttext">
+            						<h1>Recepient<br>Number*</h1>
+            					</div>
+            				</div>
+            				<div class="col-md-7 col-sm-7 col-xs-7">
+            					<div class="bookingleftinput">
+						    		<input type="text" class="form-control" placeholder="Recepient Number">
+						    	</div>
+            				</div>
+            				<div class="col-md-2 col-sm-2 col-xs-2">
+            					<div class="bookingleftbutton">
+						      		<button type="button" class="btn btn-outline-primary">Add</button>
+						      	</div>
+            				</div>
+            			</div>
+
+            			<div class="bookingleftcontent1 clearfix">
+
+            				<div class="col-md-3 col-sm-3 col-xs-3">
+            					<div class="bookinglefttext">
+            						<h1>Recepient<br>Name*</h1>
+            					</div>
+            				</div>
+
+            				<div class="col-md-7 col-sm-7 col-xs-7">
+            					<div class="bookingleftinput">
+						    		<input type="text" class="form-control" placeholder="Recepient Name">
+						    	</div>
+            				</div>
+
+            				<div class="col-md-2 col-sm-2 col-xs-2">
+            					<div class="bookingleftbutton1">
+						      		<button type="button" class="btn btn-outline-primary">Add</button>
+						      	</div>
+            				</div>
+
+            			</div>
+
+            			<div class="bookingleftcontent1 clearfix">
+
+            				<div class="col-md-3 col-sm-3 col-xs-3">
+            					<div class="bookinglefttext">
+            						<h1>Recepient<br>Address*</h1>
+            					</div>
+            				</div>
+
+            				<div class="col-md-7 col-sm-7 col-xs-7">
+            					<div class="bookingleftinput">
+						    		<input type="text" class="form-control" placeholder="Recepient Address">
+						    	</div>
+            				</div>
+
+            				<div class="col-md-2 col-sm-2 col-xs-2">
+            					<div class="bookingleftbutton1">
+						      		<button type="button" class="btn btn-outline-primary">Add</button>
+						      	</div>
+            				</div>
+
+            			</div>
+
+            			<div class="bookingleftcontent1 clearfix">
+
+            				<div class="col-md-3 col-sm-3 col-xs-3">
+            					<div class="bookinglefttext">
+            						<h1>City*</h1>
+            					</div>
+            				</div>
+
+            				<div class="col-md-7 col-sm-7 col-xs-7">
+            					<div class="bookingleftinput">
+						    		<input type="text" class="form-control" placeholder="City">
+						    	</div>
+            				</div>
+
+            				<div class="col-md-2 col-sm-2 col-xs-2">
+            					<div class="bookingleftbutton1">
+						      		<button type="button" class="btn btn-outline-primary">Add</button>
+						      	</div>
+            				</div>
+
+            			</div>
+
+            			<div class="bookingleftcontent1 clearfix">
+
+            				<div class="col-md-3 col-sm-3 col-xs-3">
+            					<div class="bookinglefttext">
+            						<h1>Recepient<br>Area*</h1>
+            					</div>
+            				</div>
+
+            				<div class="col-md-7 col-sm-7 col-xs-7">
+            					<div class="bookingleftinput">
+						    		<input type="text" class="form-control" placeholder="Recepient Area">
+						    	</div>
+            				</div>
+
+            				<div class="col-md-2 col-sm-2 col-xs-2">
+            					<div class="bookingleftbutton1">
+						      		<button type="button" class="btn btn-outline-primary">Add</button>
+						      	</div>
+            				</div>
+
+            			</div>
+
+            			<div class="bookingleftcontent2 clearfix">
+
+            				<div class="col-md-3 col-sm-3 col-xs-3">
+            					<div class="bookinglefttext">
+            						<h1>Recepient<br>Landmark*</h1>
+            					</div>
+            				</div>
+
+            				<div class="col-md-7 col-sm-7 col-xs-7">
+            					<div class="bookingleftinput">
+						    		<input type="text" class="form-control" placeholder="Recepient Landmark">
+						    	</div>
+            				</div>
+
+            				<div class="col-md-2 col-sm-2 col-xs-2">
+            					<div class="bookingleftbutton1">
+						      		<button type="button" class="btn btn-outline-primary">Add</button>
+						      	</div>
+            				</div>
+
+            			</div>
+
+
+
+            			<div class="bookingbodyheader bookingleftbootom clearfix">
+            				<h1>Cost Management</h1>
+            			</div>
+
+            			<div class="bookingleftcontent blbcontent clearfix">
+            				<div class="col-md-8 col-sm-8 col-xs-8 col-md-offset-2 col-sm-offset-2 col-xs-offset-2">
+            					<div class="blbcontenttext">
+            						<h1>Shipping Cost</h1>
+            						<h2>0</h2>
+            						<h1>COD</h1>
+            						<h2>0</h2>
+            					</div>
+            				</div>
+
+            				<div class="col-md-8 col-sm-8 col-xs-8 col-md-offset-2 col-sm-offset-2 col-xs-offset-2">
+            					<div class="blbcontenttextlast">
+            						<h1>Total Cost (+)</h1>
+            						<h2>0</h2>
+            					</div>
+            				</div>
+            			</div>
+
+            			<div class="col-md-12 col-sm-12 col-xs-12">
+        					<div class="bookingbottombutton">
+					      		<button type="button" class="btn btn-outline-primary">Submit</button>
+					      	</div>
+        				</div>
+                    </div>
+
+            		<div class="col-md-6 col-sm-12 col-xs-12">
+
+            			<div class="bookingbodyheader clearfix">
+            				<h1>Parcel Information</h1>
+            			</div>
+
+            			<div class="bookingrightcontent clearfix">
+            				<div class="col-md-3 col-sm-3 col-xs-3">
+            					<div class="bookingrighttext">
+            						<h1>Product ID</h1>
+            					</div>
+            				</div>
+            				<div class="col-md-9 col-sm-9 col-xs-9">
+            					<div class="bookingrightinput">
+						    		<input type="text" class="form-control" placeholder="">
+						    	</div>
+            				</div>
+            			</div> 
+
+            			<div class="bookingrightcontent1 clearfix">
+
+            				<div class="col-md-3 col-sm-3 col-xs-3">
+            					<div class="bookingrighttext">
+            						<h1>Parcel Type *</h1>
+            					</div>
+            				</div>
+
+            				<div class="col-md-4 col-sm-4 col-xs-4">
+            					<div class="checkboxinfo ckinfo">
+        							<label class="container">
+									  <input type="checkbox">
+									  <span class="checkmark"></span>
+									  <h1>Parcel</h1>
+									</label>
+        						</div>
+            				</div>
+
+            				<div class="col-md-5 col-sm-5 col-xs-5">
+            					<div class="checkboxinfo ckinfo">
+        							<label class="container">
+									  <input type="checkbox">
+									  <span class="checkmark"></span>
+									  <h1>Document</h1>
+									</label>
+        						</div>
+            				</div>
+            			</div>
+
+            			<div class="bookingrightcontent1 clearfix">
+            				<div class="col-md-3 col-sm-3 col-xs-3">
+            					<div class="bookingrighttext">
+            						<h1>Payment <br>Method*</h1>
+            					</div>
+            				</div>
+            				<div class="col-md-9 col-sm-9 col-xs-9">
+						            <div class="selectdiv selectstyle">
+									      <select>
+									          <option selected>Select Payment Method</option>
+									          <option>Option 1</option>
+									          <option>Option 2</option>
+									          <option>Option 2</option>
+									          <option>Option 2</option>
+									      </select>
+									</div>
+            				</div>
+            			</div>
+
+            			<div class="bookingrightcontent1 clearfix">
+
+            				<div class="col-md-3 col-sm-3 col-xs-3">
+            					<div class="bookingrighttext">
+            						<h1>Payment <br>Method*</h1>
+            					</div>
+            				</div>
+
+            				<div class="col-md-4 col-sm-4 col-xs-4">
+            					<div class="checkboxinfo ckinfo1">
+        							<label class="container checkboxstyle">
+									  <input type="checkbox">
+									  <span class="checkmark"></span>
+									  <h1>Standard<br><strong>(24-48hrs)</strong></h1>
+									</label>
+        						</div>
+            				</div>
+
+            				<div class="col-md-5 col-sm-5 col-xs-5">
+            					<div class="checkboxinfo ckinfo1">
+        							<label class="container">
+									  <input type="checkbox">
+									  <span class="checkmark"></span>
+									  <h1>Guaranteed (24hrs)<br><small>Booking Time:<br>12AM TO 5PM</small></h1>
+									</label>
+        						</div>
+            				</div>
+            			</div>
+
+            			<div class="bookingrightcontent1 clearfix">
+            				<div class="col-md-3 col-sm-3 col-xs-3">
+            					<div class="bookingrighttext">
+            						<h1>Package<br>name*</h1>
+            					</div>
+            				</div>
+            				<div class="col-md-9 col-sm-9 col-xs-9">
+						            <div class="selectdiv selectstyle">
+									      <select>
+									          <option selected>Select Package</option>
+									          <option>Option 1</option>
+									          <option>Option 2</option>
+									          <option>Option 2</option>
+									          <option>Option 2</option>
+									      </select>
+									</div>
+            				</div>
+            			</div>
+
+            			<div class="bookingrightcontent1 clearfix">
+            				<div class="col-md-3 col-sm-3 col-xs-3">
+            					<div class="bookingrighttext">
+            						<h1>Product <br>Price*</h1>
+            					</div>
+            				</div>
+            				<div class="col-md-9 col-sm-9 col-xs-9">
+						    	<div class="input-group bookingrightinput1">
+							      <span class="input-group-btn">
+							        <button class="btn btn-default" type="button">Tk.</button>
+							      </span>
+							      <input type="text" class="form-control" placeholder="Product Price">
+							    </div>
+
+							    <div class="smallstyle">
+							      <small>Including Service Charge</small>
+							    </div>
+            				</div>
+            			</div>
+
+            			<div class="bookingrightcontent1 clearfix">
+            				<div class="col-md-3 col-sm-3 col-xs-3">
+            					<div class="bookingrighttext">
+            						<h1>Promo<br>code*</h1>
+            					</div>
+            				</div>
+            				<div class="col-md-9 col-sm-9 col-xs-9">
+            					<div class="bookingrightinput">
+						    		<input type="text" class="form-control" placeholder="Promo code">
+						    	</div>
+            				</div>
+            			</div> 
+
+            			<div class="bookingrightcontent1 clearfix">
+            				<div class="col-md-3 col-sm-3 col-xs-3">
+            					<div class="bookingrighttext">
+            						<h1>Delivery<br>Date</h1>
+            					</div>
+            				</div>
+            				<div class="col-md-9 col-sm-9 col-xs-9">
+            					<div class="bookingrightinput">
+						    		<input type="text" class="form-control" placeholder="2018-11-25">
+						    	</div>
+            				</div>
+            			</div> 
+
+            			<div class="bookingrightcontent1 clearfix">
+
+            				<div class="col-md-3 col-sm-3 col-xs-3">
+            					<div class="bookingrighttext">
+            						<h1>Delivery<br>Time*</h1>
+            					</div>
+            				</div>
+
+            				<div class="col-md-4 col-sm-4 col-xs-4">
+            					<div class="checkboxinfo ckinfo ckinfo2">
+        							<label class="container checkboxstyle">
+									  <input type="checkbox">
+									  <span class="checkmark"></span>
+									  <h1>Any</h1>
+									</label>
+        						</div>
+
+        						<div class="checkboxinfo ckinfo1">
+        							<label class="container checkboxstyle">
+									  <input type="checkbox">
+									  <span class="checkmark"></span>
+									  <h1>1:00PM -<br><strong>4:00PM</strong></h1>
+									</label>
+        						</div>
+            				</div>
+
+            				<div class="col-md-5 col-sm-5 col-xs-5">
+            					<div class="checkboxinfo ckinfo1">
+        							<label class="container">
+									  <input type="checkbox">
+									  <span class="checkmark"></span>
+									  <h1>10:30AM -<br><strong>1:00PM</strong></h1>
+									</label>
+        						</div>
+
+        						<div class="checkboxinfo ckinfo1">
+        							<label class="container">
+									  <input type="checkbox">
+									  <span class="checkmark"></span>
+									  <h1>4:00PM -<br><strong>7:00PM</strong></h1>
+									</label>
+        						</div>
+            				</div>
+            			</div>
+
+            			<div class="bookingrightcontent1 clearfix">
+            				<div class="col-md-3 col-sm-3 col-xs-3">
+            					<div class="bookingrighttext">
+            						<h1>No of<br>Items*</h1>
+            					</div>
+            				</div>
+            				<div class="col-md-9 col-sm-9 col-xs-9">
+						    	<div class="input-group bookingrightinput1">
+							      <span class="input-group-btn">
+							        <button class="btn btn-default" type="button">Items</button>
+							      </span>
+							      <input type="text" class="form-control" placeholder="No of Itemse">
+							    </div>
+            				</div>
+            			</div>
+
+            			<div class="bookingrightcontent1 clearfix">
+            				<div class="col-md-3 col-sm-3 col-xs-3">
+            					<div class="bookingrighttext">
+            						<h1>Item<br>Type*</h1>
+            					</div>
+            				</div>
+            				<div class="col-md-9 col-sm-9 col-xs-9">
+            					<div class="bookingrightinput">
+						    		<input type="text" class="form-control" placeholder="Item Type">
+						    	</div>
+            				</div>
+            			</div>
+
+            			<div class="bookingrightcontent1 clearfix">
+            				<div class="col-md-3 col-sm-3 col-xs-3">
+            					<div class="bookingrighttext">
+            						<h1>Instruction</h1>
+            					</div>
+            				</div>
+            				<div class="col-md-9 col-sm-9 col-xs-9">
+            					<div class="bookingrightinput Instructionfiled">
+						    		<input type="text" class="form-control" placeholder="">
+						    	</div>
+            				</div>
+            			</div>
+            		</div>
+                    
+                </div>
+          	</div>
+        </section>
+        <!-- bookingbody Section End -->
+
+
+        <!-- footer Section start-->
+        <section class="footer_areatop">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                        <div class="footercontent">
+                            <a href="index.html"><img src="img/logo.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-4">
+                        <div class="track">
+                            <ul>
+                                <li><i class="fa fa-chevron-right"></i><a href="about.html">About</a></li>
+                                <li><i class="fa fa-chevron-right"></i><a href="service.html">Services</a></li>
+                                <li><i class="fa fa-chevron-right"></i><a href="features.html">Features</a></li>
+                                <li><i class="fa fa-chevron-right"></i><a href="faq.html">FAQ'<small>s</small></a></li>
+                                <li><i class="fa fa-chevron-right"></i><a href="media.html">Media Room</a></li>
+                                <li><i class="fa fa-chevron-right"></i><a href="contact.html">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-4">
+                        <div class="track">
+                            <ul>
+                                <li><i class="fa fa-chevron-right"></i><a href="#">Delivery Agents</a></li>
+                                <li><i class="fa fa-chevron-right"></i><a href="#">E-commerce</a></li>
+                                <li><i class="fa fa-chevron-right"></i><a href="#">Payments</a></li>
+                                <li><i class="fa fa-chevron-right"></i><a href="#">User Guidline</a></li>
+                                <li><i class="fa fa-chevron-right"></i><a href="#">Call Support</a></li>
+                                <li><i class="fa fa-chevron-right"></i><a href="#">Career</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-4">
+                        <div class="track">
+                            <ul>
+                                <li><i class="fa fa-facebook-official"></i><a href="#">Facebook</a></li>
+                                <li><i class="fa fa-twitter"></i><a href="#">Twitter</a></li>
+                                <li><i class="fa fa-linkedin-square"></i><a href="#">Linkedin</a></li>
+                                <li><i class="fa fa-instagram"></i><a href="#">Instagram</a></li>
+                                <li><i class="fa fa-google-plus"></i><a href="#">Google+</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- footer Section End -->
+
+        <!-- footer_areabottom Section start-->
+        <section class="footer_areabottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                        <div class="footer_areabottomcontent">
+                            <h1>Copyright  &copy; 2018 worldtradeexpress.com. All rights reserved.Terms & Conditions | Privacy Policy</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- footer_areabottom Section send-->
+
+        <div class="short_cut">
+            <button data-toggle="modal" data-target="#ticket" class="shortcutbtn" type="button">Create Ticket</button>
+        </div>
+
+        <!-- modal Section start -->
+       
+        <!-- line modal -->
+        
+        <div class="modal fade" id="ticket" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="seminor-login-modal-body">
+                    <h3 class="modal-title" id="lineModalLabel">Complain or Queries</h3>
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+                </div>
+                <div class="modal-body">
+                    <!-- content goes here -->
+                     <form class="seminor-login-form">
+
+                                <div class="field-container">  
+                                    <textarea type="text" class="field form-control"  rows="3" required  placeholder="Comment or Complain"></textarea>
+                                  <label class="floating-label">Comment</label> 
+                                </div>
+                                
+                                <div class="field-container">  
+                                  <select class="field form-control">
+                                       <option>Select Complain Type</option>
+                                       <option>Billing</option>
+                                       <option>Complain</option>
+                                       <option>General Query</option>
+                                       <option>Other</option>
+                                  </select>
+                                  <label class="floating-label">Complain Type</label>
+                                </div>
+
+                            <div class="btn-check-log">
+                                <button type="submit" class="btn-check-login">Submit</button>
+                            </div>
+                      </form>
+                </div>
+            </div>
+          </div>
+        </div>
+        <!-- modal Section end -->
+
+		<!-- Return to Top -->
+		<a href="javascript:" id="return-to-top"><i class="fa fa-angle-up"></i></a>
+
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.18/jquery.touchSwipe.min.js"></script>
+        <!-- Bootstrap bootstrap-touch-slider Slider Main JS File -->
+        <script src="js/bootstrap-touch-slider.js"></script>
+        
+        <script type="text/javascript">
+            $('#bootstrap-touch-slider').bsTouchSlider();
+        </script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
+        <script src="js/plugins.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/js/swiper.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>

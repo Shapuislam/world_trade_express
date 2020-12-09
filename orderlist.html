@@ -1,0 +1,555 @@
+<!doctype html>
+<html class="no-js" lang="">   
+    <head> 
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge"> 
+        <title>World Trade Express | ORDER LIST</title> 
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" type="image/png" href="img/favicon.png"/>
+
+        <!-- Place favicon.ico in the root directory -->
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto:400,700" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"><!-- 
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"> -->
+        <link  href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" media="all">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.1/css/bootstrap-select.css" />
+        <link  href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css" rel="stylesheet" media="all">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" rel="stylesheet" media="all">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <!-- header Section Start -->    
+        <header class="header-area">
+                <!-- Menu Area
+                ============================================ -->
+                <div id="main-menu" class="sticker">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+
+                                <div class="col-md-1 col-sm-1 col-xs-2">
+                                    <div class="logo login float-left navbar-header">
+                                        <a class="navbar-brand" href="index.html"><img src="img/favicon.png" alt=""></a>
+                                    </div>
+                                    <div class="logonext float-left">
+                                        <a class="navbar-brand" href="index.html"><img src="img/favicon.png" alt=""></a>
+                                    </div>
+                                    <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-menu-2" style="float: left; margin: 0;">
+                                        <i class="fa fa-bars menu-open"></i>
+                                        <i class="fa fa-times menu-close"></i>
+                                    </button>
+                                </div>
+
+                                <div class="col-md-11 col-sm-11 col-xs-10">
+                                    <div class="main-menu float-right collapse navbar-collapse loginmenu" id="main-menu-2">
+                                        <nav>                        
+                                            <ul>
+                                                <li><a href="dashboard.html">Home</a></li>
+                                                <li  class="active"><a href="#">Report<span class="dropdown fa fa-angle-down" style="padding-left: 5px;"></span></a></a>
+                                                    <ul>
+                                                      <li><a href="orderlist.html"><i class="fa fa-chevron-right"></i>Order List</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li><a href="booking.html">Booking</a></li>
+                                                <li><a href="payment.html">Payments Details</a></li>
+                                                <li><a href="ticket.html">Tickets</a></li>
+                                                <li><a href="faqlogin.html">Faq's</a></li>
+                                                <li class="contactdp"><a href="#">Booster<span class="dropdown fa fa-angle-down" style="padding-left: 5px;"></span></a></a>
+                                                    <ul>
+                                                      <li><a href="account.html"><i class="fa fa-chevron-right"></i>Account</a></li>
+                                                      <li><a href="#"><i class="fa fa-chevron-right"></i>Contact</a>
+                                                        <ul>
+                                                          <li><a href="group.html"><i class="fa fa-chevron-right"></i>Group</a></li>
+                                                          <li><a href="number.html"><i class="fa fa-chevron-right"></i>Number</a></li>
+                                                        </ul>
+                                                      </li>
+                                                      <li><a href="sms.html"><i class="fa fa-chevron-right"></i>Sms</a></li>
+                                                      <li><a href="topup.html"><i class="fa fa-chevron-right"></i>Top Up</a></li>
+                                                      <li><a href="log.html"><i class="fa fa-chevron-right"></i>Log</a></li>
+                                                      <li><a href="paymentlog.html"><i class="fa fa-chevron-right"></i>Paymrnt Log</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="expressmenu"><a href="#">WT Express<span class="dropdown fa fa-angle-down" style="padding-left: 5px;"></span></a></a>
+                                                    <ul>
+                                                      <li><a href="packages.html"><i class="fa fa-chevron-right"></i>My Package & Promo</a></li>
+                                                      <li><a href="accountdetails.html"><i class="fa fa-chevron-right"></i>Account Details</a></li>
+                                                      <li><a href="api.html"><i class="fa fa-chevron-right"></i>Api</a></li>
+                                                      <li><a href="passwordreset.html"><i class="fa fa-chevron-right"></i>Password Reset</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="logout"><a href="#"><i class="fa fa-sign-out"></i></a></li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </header>
+        <!-- header Section end -->   
+        
+       <!-- slider Section Start -->       
+        <section class="loginslider" style="background-image: url(img/loginslide.jpg);">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-8 col-sm-8 col-xs-8">
+                    <h1>Order List</h1>
+                </div>
+              </div>             
+            </div>
+         </section>
+        <!-- slider Section end --> 
+
+
+        <!-- Parcel Section start --> 
+        <section class="parcel">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                        <div class="parcelbody clearfix">
+                            <h1>Parcel Report</h1>
+                            <table class="table table-bordered table-responsive">
+                          <thead>
+                            <tr>
+                              <th class="text-center ticket_data_heading_bold info" scope="col">Total Parcel</th>
+                              <th class="text-center ticket_data_heading_bold success" scope="col">Total Delivered</th>
+                              <th class="text-center ticket_data_heading_bold active" scope="col">On Process</th>
+                              <th class="text-center ticket_data_heading_bold warning" scope="col">Total Cancel</th>
+                              <th class="text-center ticket_data_heading_bold danger" scope="col">Total Returned</th>
+                              <th class="text-center ticket_data_heading_bold info" scope="col">Total Product Price</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <th class="text-center ticket_data_heading_bold info"  scope="row">0</th>
+                              <td class="text-center ticket_data_heading_bold success">0</td>
+                              <td class="text-center ticket_data_heading_bold active">0</td>
+                              <td class="text-center ticket_data_heading_bold warning">0</td>
+                              <td class="text-center ticket_data_heading_bold danger">0</td>
+                              <td class="text-center ticket_data_heading_bold info">0</td>
+                            </tr>
+                          </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Parcel Section end -->
+
+        <!-- Parcel Section start --> 
+        <section class="parcel">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                        <div class="parcelbody parcelbottom clearfix">
+                            <h1>Payment Report</h1>
+                            <table class="table table-bordered table-responsive">
+                          <thead>
+                            <tr>
+                              <th class="text-center ticket_data_heading_bold success" scope="col">Delivered Amount</th>
+                              <th class="text-center ticket_data_heading_bold info" scope="col">Collected Amount</th>
+                              <th class="text-center ticket_data_heading_bold warning" scope="col">on Process Amount</th>
+                              <th class="text-center ticket_data_heading_bold active" scope="col">Return Amount</th>
+                              <th class="text-center ticket_data_heading_bold info" scope="col">Price of <span>0 Parcel</span> - (Shipping+COD) = Paid</th>
+                              <th class="text-center ticket_data_heading_bold danger" scope="col">Unpaid <span>0 Parcel</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <th class="text-center ticket_data_heading_bold success"  scope="row">0</th>
+                              <td class="text-center ticket_data_heading_bold info">0</td>
+                              <td class="text-center ticket_data_heading_bold warning">0</td>
+                              <td class="text-center ticket_data_heading_bold active">0</td>
+                              <td class="text-center ticket_data_heading_bold info">0 - 0 = 0</td>
+                              <td class="text-center ticket_data_heading_bold danger">0</td>
+                            </tr>
+                          </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Parcel Section end -->
+
+        <!-- ordermain body Section start --> 
+        <section class="ordermain">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-md-2 col-sm-4 col-xs-4">
+                        <div class="dpic">
+                            <input class="form-control" id="date" name="date" placeholder="Date From" type="text"/>
+                        </div>
+                    </div>
+
+                    <div class="col-md-2 col-sm-4 col-xs-4">
+                        <div class="dpic">
+                            <input class="form-control" id="date" name="date" placeholder="Date To" type="text"/>
+                        </div>
+                    </div>
+
+                    <div class="col-md-2 col-sm-4 col-xs-4">
+                            <select data-live-search="true" data-live-search-style="startsWith" class="selectpicker">
+                                <option value="#">Select Status</option>
+                                <option value="Fedex">Fedex</option>
+                                <option value="Elite">Elite</option>
+                                <option value="Interp">Interp</option>
+                                <option value="Test">Test</option>
+                                <option value="Test">Test</option>
+                                <option value="Test">Test</option>
+                                <option value="Test">Test</option>
+                                <option value="Test">Test</option>
+                                <option value="Test">Test</option>
+                            </select>
+                    </div>
+
+                    <div class="col-md-2 col-sm-4 col-xs-4">
+                        <select data-live-search="true" data-live-search-style="startsWith" class="selectpicker">
+                            <option value="#">Paid Status</option>
+                            <option value="#">Paid</option>
+                            <option value="#">Un Paid</option>
+                        </select>
+                    </div>
+
+                    <div class="col-md-2 col-sm-4 col-xs-4">
+                        <select data-live-search="true" data-live-search-style="startsWith" class="selectpicker">
+                            <option value="#">Delivery Type</option>
+                            <option value="Fedex">Standrand</option>
+                            <option value="Fedex">Guranted</option>
+                        </select>
+                    </div>
+
+                    <div class="col-md-2 col-sm-4 col-xs-4">
+                        <div class="loginformfiledbutton orbutton">
+                            <button type="button" class="btn btn-outline-primary">Submit</button>
+                        </div>
+                    </div>
+
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                        <div class="loginformfiledbutton orbuttonbottom">
+                            <button type="button" class="btn btn-outline-primary">Bulk Label print</button>
+                        </div>
+                    </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ordermain body Section end --> 
+        
+        <!-- ordertable Section start -->
+        <section class="ordertable clearfix">
+          	<div class="container">
+            	<div class="row">
+            		<div class="col-md-12 col-sm-12 col-xs-12">
+
+                        <div class="ordertablemain">
+                            
+                            <a class="print_space_btn btn btn-xs" id="#" title="Download CSV"><span>CSV</span>
+                            </a>
+
+                            <a class="print_space_btn btn btn-xs" id="#" title="Download EXCEL"><span>EXCEL</span>
+                            </a>
+
+                            <a class="print_space_btn btn btn-xs" id="#" title="Download PDF"><span>PDF</span>
+                            </a>
+
+                            <a class="print_space_btn btn btn-xs" id="#" title="Download PRINT"><span>PRINT</span>
+                            </a>
+
+                            <a class="print_space_btn btn btn-xs" id="#" title="Download Label"><span>Label</span>
+                            </a>
+                        </div>
+                    
+                    <table id="example" class="display nowrap table-bordered table-responsive" style="width:100%">
+                        <thead>
+                            <tr>
+                                <th><input type="checkbox" id="#""></th>
+                                <th>Action</th>
+                                <th>Consignment</th>
+                                <th>Parcel Status</th>
+                                <th>Payment Status</th>
+                                <th>Recipient Name</th>
+                                <th>Recipient Mobile</th>
+                                <th>Order Time</th>
+                                <th>Delivery Type</th>
+                                <th>Delivery Date &amp; Time</th>
+                                <th>Product ID</th>
+                                <th>Payment Method</th>
+                                <th>Product Price</th>
+                                <th>Collected Amount</th>
+                                <th>Shipping Charge</th>
+                                <th>COD</th>
+                                <th>Comments</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td style="text-align: center;"><input type="checkbox" id="#""></td>
+                                <td>zkkkz</td>
+                                <td>System Architect</td>
+                                <td>Edinburgh</td>
+                                <td>61</td>
+                                <td>2011/04/25</td>
+                                <td>$320,800</td>
+                                <td>5421</td>
+                                <td>kkdk</td>
+                                <td>67</td>
+                                <td>kksksk</td>
+                                <td>dkks</td>
+                                <td>t.nixon@datatables.net</td>
+                                <td>t.nixon@datatables.net</td>
+                                <td>t.nixon@datatables.net</td>
+                                <td>t.nixon@datatables.net</td>
+                                <td>t.nixon@datatables.net</td>
+                            </tr>
+
+                            <tr>
+                                <td style="text-align: center;"><input type="checkbox" id="#""></td>
+                                <td>jsjj</td>
+                                <td>System Architect</td>
+                                <td>Edinburgh</td>
+                                <td>993</td>
+                                <td>2011/04/25</td>
+                                <td>$320,800</td>
+                                <td>5421</td>
+                                <td>kkdk</td>
+                                <td>67</td>
+                                <td>kksksk</td>
+                                <td>dkks</td>
+                                <td>t.nixon@datatables.net</td>
+                                <td>t.nixon@datatables.net</td>
+                                <td>t.nixon@datatables.net</td>
+                                <td>t.nixon@datatables.net</td>
+                                <td>t.nixon@datatables.net</td>
+                            </tr>
+
+                            <tr>
+                                <td style="text-align: center;"><input type="checkbox" id="#""></td>
+                                <td>skks</td>
+                                <td>System Architect</td>
+                                <td>Edinburgh</td>
+                                <td>61</td>
+                                <td>2011/04/25</td>
+                                <td>$320,800</td>
+                                <td>5421</td>
+                                <td>kkdk</td>
+                                <td>67</td>
+                                <td>kksksk</td>
+                                <td>dkks</td>
+                                <td>t.nixon@datatables.net</td>
+                                <td>t.nixon@datatables.net</td>
+                                <td>t.nixon@datatables.net</td>
+                                <td>t.nixon@datatables.net</td>
+                                <td>t.nixon@datatables.net</td>
+                            </tr>
+                        </tbody>
+                    </table>
+		               </div>
+					</div>
+                </div>
+          	</div>
+        </section>
+        <!-- ordertable Section End -->
+
+
+        <!-- footer Section start-->
+        <section class="footer_areatop">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                        <div class="footercontent">
+                            <a href="index.html"><img src="img/logo.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-4">
+                        <div class="track">
+                            <ul>
+                                <li><i class="fa fa-chevron-right"></i><a href="about.html">About</a></li>
+                                <li><i class="fa fa-chevron-right"></i><a href="service.html">Services</a></li>
+                                <li><i class="fa fa-chevron-right"></i><a href="features.html">Features</a></li>
+                                <li><i class="fa fa-chevron-right"></i><a href="faq.html">FAQ'<small>s</small></a></li>
+                                <li><i class="fa fa-chevron-right"></i><a href="media.html">Media Room</a></li>
+                                <li><i class="fa fa-chevron-right"></i><a href="contact.html">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-4">
+                        <div class="track">
+                            <ul>
+                                <li><i class="fa fa-chevron-right"></i><a href="#">Delivery Agents</a></li>
+                                <li><i class="fa fa-chevron-right"></i><a href="#">E-commerce</a></li>
+                                <li><i class="fa fa-chevron-right"></i><a href="#">Payments</a></li>
+                                <li><i class="fa fa-chevron-right"></i><a href="#">User Guidline</a></li>
+                                <li><i class="fa fa-chevron-right"></i><a href="#">Call Support</a></li>
+                                <li><i class="fa fa-chevron-right"></i><a href="#">Career</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-4">
+                        <div class="track">
+                            <ul>
+                                <li><i class="fa fa-facebook-official"></i><a href="#">Facebook</a></li>
+                                <li><i class="fa fa-twitter"></i><a href="#">Twitter</a></li>
+                                <li><i class="fa fa-linkedin-square"></i><a href="#">Linkedin</a></li>
+                                <li><i class="fa fa-instagram"></i><a href="#">Instagram</a></li>
+                                <li><i class="fa fa-google-plus"></i><a href="#">Google+</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- footer Section End -->
+
+        <!-- footer_areabottom Section start-->
+        <section class="footer_areabottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                        <div class="footer_areabottomcontent">
+                            <h1>Copyright  &copy; 2018 worldtradeexpress.com. All rights reserved.Terms & Conditions | Privacy Policy</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- footer_areabottom Section send-->
+
+
+        <div class="short_cut">
+            <button data-toggle="modal" data-target="#get" class="shortcutbtn" type="button">Create Ticket</button>
+        </div>
+
+        <!-- modal Section start -->
+       
+        <!-- line modal -->
+        
+        <div class="modal fade" id="get" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="seminor-login-modal-body">
+                    <h3 class="modal-title" id="lineModalLabel">GET A QUOTE</h3>
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+                </div>
+                <div class="modal-body">
+                    <!-- content goes here -->
+                     <form class="seminor-login-form">
+                        
+                             <div class="field-container">  
+                                  <input type="text" class="field form-control" required placeholder="Name"/>
+                                  <label class="floating-label">Name</label> 
+                                </div>
+                                
+                                <div class="field-container">  
+                                  <input type="text" class="field form-control" required placeholder="Mobile"/>
+                                  <label class="floating-label">Mobile</label> 
+                                </div>
+
+                                <div class="field-container">  
+                                  <input type="text" class="field form-control" required placeholder="Email Address"/>
+                                  <label class="floating-label">Email Address</label> 
+                                </div>
+                                
+                                <div class="field-container">  
+                                  <select class="field form-control" placeholder="Request For Quote">
+                                       <option>Basic</option>
+                                       <option>ERP</option>
+                                       <option>Offline Apps</option>
+                                       <option>Apps</option>
+                                       <option>Wordpress Versions</option>
+                                       <option>Wordpress Plugings</option>
+                                  </select>
+                                  <label class="floating-label">Request For Quote</label>
+                                </div>
+
+                                 <div class="field-container">  
+                                    <textarea type="text" class="field form-control"  rows="3" required  placeholder="Description"></textarea>
+                                  <label class="floating-label">Description</label> 
+                                </div>
+
+                            <div class="btn-check-log">
+                                <button type="submit" class="btn-check-login">Submit</button>
+                            </div>
+                      </form>
+                </div>
+            </div>
+          </div>
+        </div>
+        <!-- modal Section end -->
+
+        <div class="short_cut">
+            <button data-toggle="modal" data-target="#ticket" class="shortcutbtn" type="button">Create Ticket</button>
+        </div>
+
+        <!-- modal Section start -->
+       
+        <!-- line modal -->
+        
+        <div class="modal fade" id="ticket" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="seminor-login-modal-body">
+                    <h3 class="modal-title" id="lineModalLabel">Complain or Queries</h3>
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+                </div>
+                <div class="modal-body">
+                    <!-- content goes here -->
+                     <form class="seminor-login-form">
+
+                                <div class="field-container">  
+                                    <textarea type="text" class="field form-control"  rows="3" required  placeholder="Comment or Complain"></textarea>
+                                  <label class="floating-label">Comment</label> 
+                                </div>
+                                
+                                <div class="field-container">  
+                                  <select class="field form-control">
+                                       <option>Select Complain Type</option>
+                                       <option>Billing</option>
+                                       <option>Complain</option>
+                                       <option>General Query</option>
+                                       <option>Other</option>
+                                  </select>
+                                  <label class="floating-label">Complain Type</label>
+                                </div>
+
+                            <div class="btn-check-log">
+                                <button type="submit" class="btn-check-login">Submit</button>
+                            </div>
+                      </form>
+                </div>
+            </div>
+          </div>
+        </div>
+        <!-- modal Section end -->
+
+		<!-- Return to Top -->
+		<a href="javascript:" id="return-to-top"><i class="fa fa-angle-up"></i></a>
+
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.18/jquery.touchSwipe.min.js"></script>
+        <!-- Bootstrap bootstrap-touch-slider Slider Main JS File -->
+        <script src="js/bootstrap-touch-slider.js"></script>
+        
+        <script type="text/javascript">
+            $('#bootstrap-touch-slider').bsTouchSlider();
+        </script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
+        <!-- Include Date Range Picker -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/>
+        <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.1/js/bootstrap-select.js"></script>
+        <script src="js/plugins.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/js/swiper.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
